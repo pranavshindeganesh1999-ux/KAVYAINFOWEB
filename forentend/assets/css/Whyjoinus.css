@@ -32,7 +32,7 @@ body {
 =========================== */
 .services-hero {
   height: 83vh;
-  background: url('/forentend/assets/img/images/first\ page.jpg') no-repeat center center/cover;
+  background: url('assets/img/images/first\ page.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: flex-end;
