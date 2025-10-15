@@ -27,7 +27,7 @@ a {
 .services-hero {
     position: relative;
     height: 40vh;
-    background: url("/forentend/assets/img/website/performance\ marketing.png") center/cover no-repeat;
+    background: url("/assets/img/website/performance\ marketing.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

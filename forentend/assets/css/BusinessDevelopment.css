@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .services-hero {
   height: 83vh;
-  background: url('/forentend/assets/img/website/Business\ dev.png') no-repeat center center/cover;
+  background: url('/assets/img/services/Business\ dev.png') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -211,7 +211,7 @@ body {
   width: 100%;
   margin: auto;
   position: relative;
-  background: url('/forentend/assets/img/images/firosnv-photography-Z2c6ounF-iE-unsplash.jpg') no-repeat center/cover;
+  background: url('/assets/img/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg') no-repeat center/cover;
 }
 
 .overlay-service {
@@ -322,7 +322,7 @@ body {
   top: 0;
   width: 50%;
   height: 100%;
-  background: url('/assets/Images/c2.jpg') no-repeat right center;
+  background: url('/assets/img/images/case-bg.jpg') no-repeat right center;
   background-size: contain;
   opacity: 0.2;
   pointer-events: none;
@@ -355,7 +355,7 @@ body {
 .services-impact {
   position: relative;
   /* padding: 80px 20px; */
-  background: url("your-background.png") no-repeat center center;
+  /* background: url("/forentend/assets/") no-repeat center center; */
   background-size: cover;
   /* Full background cover */
   color: #111;

@@ -1,7 +1,7 @@
 /* Hero Section */
 .services-hero {
   height: 73vh;
-  background: url('/forentend/assets/img/website/job\ Op.png') no-repeat center center/cover;
+  background: url('/assets/img/website/job\ Op.png') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: flex-end; /* push content to bottom */

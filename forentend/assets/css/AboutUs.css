@@ -1,7 +1,7 @@
 /* HERO SECTION */
 .services-hero {
     position: relative;
-    background: url('../img/performance-bg.jpg') center center/cover no-repeat;
+    background: url('/assets/img/services/performanance.png') center center/cover no-repeat;
     height: 90vh;
     display: flex;
     align-items: center;

@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .services-hero {
   height: 83vh;
-  background: url('/forentend/assets/img/services/software\ dev.png') no-repeat center center/cover;
+  background: url('/assets/img/services/software\ dev.png') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -208,7 +208,7 @@ body {
   width: 100%;
   margin: auto;
   position: relative;
-  background: url('/forentend/assets/img/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg') no-repeat right center;
+  background: url('/assets/img/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg') no-repeat right center;
 }
 
 .overlay-service{

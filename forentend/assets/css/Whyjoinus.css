@@ -238,7 +238,7 @@ body {
 .header-section {
   width: 100%;
   /* min-height: 100vh; */
-  background: url('/forentend/assets/img/images/MicrosoftTeams-image-45.jpg') no-repeat center center/cover;
+  background: url('/assets/img/images/MicrosoftTeams-image-45.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
