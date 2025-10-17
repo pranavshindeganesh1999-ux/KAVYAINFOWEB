@@ -143,7 +143,7 @@
       <h1 data-aos="fade-up" data-aos-delay="100">Services</h1>
       <p data-aos="fade-up" data-aos-delay="300">Designs that incite user response</p>
     </div>
-
+ 
     <div class="unic-services-content">
       <div class="unic-services-menu" data-aos="fade-right" data-aos-delay="400">
         <button class="active">Requirement Analysis</button>
@@ -153,10 +153,12 @@
         <button>Testing & Quality Assurance</button>
         <button>Deployment & Maintenance</button>
       </div>
-
+ 
       <div class="unic-services-details" data-aos="fade-left" data-aos-delay="400">
-        <p>Our team collaborates closely with stakeholders to gather, study, and validate business needs. This ensures
-          that every software solution is aligned with organizational goals and end-user expectations.</p>
+        <p>
+          Our team collaborates closely with stakeholders to gather, study, and validate business needs. This ensures
+          that every software solution is aligned with organizational goals and end-user expectations.
+        </p>
         <ul>
           <li>Understanding business objectives</li>
           <li>Identifying functional and non-functional requirements</li>
@@ -251,6 +253,117 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+<script>
+    // Data for each service
+    const serviceData = {
+      "Requirement Analysis": {
+        text: "Our team collaborates closely with stakeholders to gather, study, and validate business needs. This ensures that every software solution is aligned with organizational goals and end-user expectations.",
+        list: [
+          "Understanding business objectives",
+          "Identifying functional and non-functional requirements",
+          "Defining use cases and user stories",
+          "Assessing technical feasibility",
+          "Preparing a requirement specification document"
+        ]
+      },
+      "System Architecture & Design": {
+        text: "We design scalable, secure, and high-performance system architectures tailored to your business model and growth requirements.",
+        list: [
+          "High-level architecture planning",
+          "Database and API design",
+          "Scalability and performance optimization",
+          "Security architecture implementation",
+          "Prototyping and wireframing"
+        ]
+      },
+      "Custom Application Development": {
+        text: "We deliver tailor-made software applications that solve real business problems and enhance user experience through innovative design and robust code.",
+        list: [
+          "Frontend and backend development",
+          "Agile methodology with sprint cycles",
+          "Cross-platform mobile app development",
+          "Third-party API integrations",
+          "Code reviews and version control"
+        ]
+      },
+      "Integration with Existing Systems": {
+        text: "We integrate new software seamlessly with your legacy systems to ensure smooth workflows and unified functionality across platforms.",
+        list: [
+          "API and middleware integration",
+          "Data migration and synchronization",
+          "Cloud service integration",
+          "Automation of manual workflows",
+          "Ensuring system interoperability"
+        ]
+      },
+      "Testing & Quality Assurance": {
+        text: "Our QA experts ensure your applications run flawlessly by testing for functionality, performance, and security.",
+        list: [
+          "Manual and automated testing",
+          "Performance and load testing",
+          "Security and vulnerability assessment",
+          "User acceptance testing (UAT)",
+          "Continuous integration and testing"
+        ]
+      },
+      "Deployment & Maintenance": {
+        text: "We manage deployment, scaling, and post-launch maintenance to ensure reliable performance and ongoing success.",
+        list: [
+          "Cloud and on-premise deployment",
+          "CI/CD pipeline setup",
+          "Monitoring and performance tracking",
+          "Bug fixes and version upgrades",
+          "24/7 maintenance and support"
+        ]
+      }
+    };
+ 
+    // Select elements
+    const buttons = document.querySelectorAll(".unic-services-menu button");
+    const detailsContainer = document.querySelector(".unic-services-details");
+ 
+    // Function to update content
+    function updateServiceContent(title) {
+      const service = serviceData[title];
+      if (!service) return;
+ 
+      detailsContainer.innerHTML = `
+      <p>${service.text}</p>
+      <ul>
+        ${service.list.map(item => `<li>${item}</li>`).join("")}
+      </ul>
+    `;
+    }
+ 
+    // Add click events
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        // Remove active class from all buttons
+        buttons.forEach(btn => btn.classList.remove("active"));
+        // Add active class to clicked button
+        button.classList.add("active");
+ 
+        // Update content
+        const title = button.textContent.trim();
+        updateServiceContent(title);
+      });
+    });
+ 
+    // Default content load
+    updateServiceContent("Requirement Analysis");
+  </script>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
