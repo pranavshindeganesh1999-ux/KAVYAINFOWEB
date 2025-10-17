@@ -46,7 +46,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f7fbfa;
+  --background-color: #defcf5;
   --surface-color: #ffffff;
 }
 
@@ -791,7 +791,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   scroll-margin-top: 78px;
   overflow: clip;
 }
@@ -1120,7 +1120,7 @@ section,
   right: 0;
   width: 50%;
   height: 100%;
-  background: url("/forentend/assets/img/bg/abstract-bg-1.webp") center/cover no-repeat;
+  background: url("../img/bg/abstract-bg-1.webp") center/cover no-repeat;
   opacity: 0.03;
   z-index: 1;
 }
@@ -1137,6 +1137,7 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
   position: relative;
   overflow: hidden;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .featured-services .service-item::before {
@@ -1947,7 +1948,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  padding: 120px 0;
+  padding: 40px 0;
 }
 
 .services .service-item {
@@ -1957,6 +1958,7 @@ section,
   transition: all 0.4s ease;
   height: 100%;
   position: relative;
+  box-shadow: 5px 5px 12px   rgba(0, 0, 0, 0.15);
 }
 
 .services .service-item:hover {
@@ -2069,7 +2071,7 @@ section,
 
 .testimonials .testimonial-slider {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .testimonials .testimonial-slider .swiper-wrapper {
@@ -2085,6 +2087,7 @@ section,
   transition: all 0.4s ease;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .testimonials .testimonial-item::before {
@@ -2211,9 +2214,9 @@ section,
 
 .testimonials .swiper-navigation {
   position: relative;
-  margin-top: 25px;
+  margin-top: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .testimonials .swiper-button-prev,
@@ -4975,7 +4978,7 @@ section,
   height: 83vh;
   display: flex;
   align-items: end;
-  background: url("/assets/img/images/freepik__adjust__55677.png") no-repeat center center/cover;
+  background: url("/forentend/assets/img/images/freepik__adjust__55677.png") no-repeat center center/cover;
 }
 
 .contact-hero-content{
