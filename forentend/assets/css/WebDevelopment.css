@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .services-hero {
   height: 83vh;
-  background: url('/assets/img/website/WEB\ DEVELOPMENT2.png') no-repeat center center/cover;
+  background: url('../img/website/WEB\ DEVELOPMENT2.png') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: flex-end;

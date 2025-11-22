@@ -32,7 +32,7 @@ body {
 =========================== */
 .services-hero {
   height: 83vh;
-  background: url('/assets/img/images/first-page.jpg') no-repeat center center/cover;
+  background: url('../img/images/first-page.jpg') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -238,7 +238,7 @@ body {
 .header-section {
   width: 100%;
   /* min-height: 100vh; */
-  background: url('/assets/img/images/MicrosoftTeams-image-45.jpg') no-repeat center center/cover;
+  background: url('../img/images/MicrosoftTeams-image-45.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

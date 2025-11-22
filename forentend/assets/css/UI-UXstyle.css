@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .services-hero {
   height: 83vh;
-  background: url('/assets/img/website/UIUX.jpg');
+  background: url('../img/website/UIUX.jpg');
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -218,7 +218,7 @@ body {
   width: 100%;
   margin: auto;
   position: relative;
-  background: url('/assets/img/images/firosnv-photography-Z2c6ounF-iE-unsplash.jpg') no-repeat center/cover;
+  background: url('../img/images/firosnv-photography-Z2c6ounF-iE-unsplash.jpg') no-repeat center/cover;
 }
 
 .overlay-service {

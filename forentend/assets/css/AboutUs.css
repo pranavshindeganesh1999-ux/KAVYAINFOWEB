@@ -1,101 +1,201 @@
-/* HERO SECTION */
-.services-hero {
-    position: relative;
-    background: url('/assets/img/services/performanance.png') center center/cover no-repeat;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
+/* ================= VARIABLES & TYPOGRAPHY ================= */
+:root {
+  --primary-color: #0d6efd;
+  --primary-dark: #0a58ca;
+  --accent-gradient: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+  --glass-bg: rgba(255, 255, 255, 0.7);
 }
 
-.services-hero::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right:0; bottom:0;
-    background: rgba(0,0,0,0.5);
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  color: #444;
+  text-align: justify;
 }
 
-.services-hero-content {
-    position: relative;
-    z-index: 2;
+
+p {
+  text-align: justify;
 }
 
-.services-hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    animation: fadeInDown 1s ease forwards;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  text-align: left; 
+}
+.text-center h1, .text-center h2, .text-center h3 {
+  text-align: center; 
 }
 
-.services-hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    animation: fadeInUp 1s ease forwards;
+.title-bold {
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
-.request-call-btn {
-    background-color: #ff4c60;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
+.ls-2 { letter-spacing: 2px; }
+.text-justify { text-align: justify; }
+
+/* Gradient Text Effect */
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
 }
 
-.request-call-btn:hover {
-    background-color: #e03b4d;
-    transform: translateY(-3px);
+/* ================= BUTTONS & UTILS ================= */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* SERVICE CARDS */
-.pm-section {
-    padding: 80px 0;
-    background: #f9f9f9;
+.section-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: rgba(13, 110, 253, 0.1);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
 }
 
-.service-card {
-    background: #fff;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+.btn-whatsappp-custom {
+  background-color: #25d366 !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+.btn-whatsappp-custom:hover {
+  background-color: #1ebe5d !important;   /* slightly darker green */
+  color: #ffffff !important;              /* visible text */
+  border-color: #1ebe5d !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4) !important;
 }
 
-.service-card h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #1a1a1a;
+
+/* ================= BACKGROUND DECOR ================= */
+.gradient-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  z-index: -1;
+}
+.blob-1 {
+  left: -100px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  background: #e0c3fc;
+}
+.blob-2 {
+  right: -100px;
+  bottom: -100px;
+  width: 350px;
+  height: 350px;
+  background: #8ec5fc;
 }
 
-.service-card ul {
-    padding-left: 20px;
-    list-style-type: disc;
+/* ================= GLASS CARD (HERO) ================= */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
 }
 
-.service-card ul li {
-    margin-bottom: 10px;
+/* ================= FOUNDER SECTION (CLEAN) ================= */
+.blob-bg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(13, 110, 253, 0.2);
+  border-radius: 50%;
+  z-index: 0;
 }
 
-/* ANIMATIONS */
-@keyframes fadeInDown {
-    0% {opacity: 0; transform: translateY(-30px);}
-    100% {opacity: 1; transform: translateY(0);}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  transition: all 0.3s;
+}
+.social-icon:hover {
+  background: var(--primary-color);
+  color: #fff;
 }
 
-@keyframes fadeInUp {
-    0% {opacity: 0; transform: translateY(30px);}
-    100% {opacity: 1; transform: translateY(0);}
+/* ================= FEATURE CARDS ================= */
+.feature-card {
+  border-color: #f1f1f1 !important;
+  transition: all 0.3s ease;
+}
+.icon-square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* RESPONSIVE */
+/* ================= INDUSTRY CARDS ================= */
+.industry-card {
+  transition: all 0.3s;
+  border-color: #eee !important;
+}
+.industry-card:hover {
+  border-color: var(--primary-color) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+.industry-icon {
+  width: 40px;
+  height: 40px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+/* ================= CTA SECTION ================= */
+.cta-box {
+  background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.circle-decoration {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.c-1 { width: 300px; height: 300px; top: -100px; left: -50px; }
+.c-2 { width: 200px; height: 200px; bottom: -50px; right: -20px; }
+
+/* ================= RESPONSIVE ================= */
+.object-fit-cover {
+  object-fit: cover;
+}
 @media (max-width: 768px) {
-    .services-hero h1 { font-size: 2rem; }
-    .services-hero p { font-size: 1rem; }
+  .display-5 { font-size: 2.5rem; }
+  .display-6 { font-size: 2rem; }
 }
+
+
